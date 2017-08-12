@@ -5,7 +5,9 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.ui.Messages;
+import com.intellij.openapi.util.ModificationTracker;
 import com.intellij.openapi.vfs.LocalFileSystem;
+import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.VirtualFileManager;
 import com.intellij.openapi.vfs.newvfs.BulkFileListener;
 import com.intellij.openapi.vfs.newvfs.events.VFileEvent;
@@ -30,8 +32,9 @@ public class testCompilation implements ApplicationComponent,BulkFileListener {
     @Override
     public void initComponent() {
 
-
         connection.subscribe(VirtualFileManager.VFS_CHANGES, this);
+
+        //ModificationTracker mv =VirtualFileManager.VFS_STRUCTURE_MODIFICATIONS;
 //        System.out.println(VirtualFileManager.VFS_CHANGES.getDisplayName());
 //        Project project= ProjectManager.getInstance().getOpenProjects()[0];
 
@@ -72,14 +75,23 @@ public class testCompilation implements ApplicationComponent,BulkFileListener {
     }
 
     public void after(List<? extends VFileEvent> events) {
+
+
+        VirtualFileManager.getInstance().notify();
 //       if(events.)
         //System.out.println("event name");
         //System.out.println(events.getClass().toString());
 //        if(events.getClass().toString().equals("Save All")) {
 //            Messages.showMessageDialog("there are", "some changes", Messages.getWarningIcon());
 //        }
-            events.get(0).getFile();
+
+//            events.get().getFile();
+//        ModificationTracker mv =VirtualFileManager.VFS_STRUCTURE_MODIFICATIONS;
+//        System.out.println(mv.toString());
+
+
     }
+
 
 
 

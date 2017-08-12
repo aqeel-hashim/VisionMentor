@@ -30,6 +30,7 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action id="generateAction" class="generateAction" text="generateAction" description="Action generation"/>
   </actions>
 
   <application-components>

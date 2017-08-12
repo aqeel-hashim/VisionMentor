@@ -33,12 +33,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/GenDialogue.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/IncomingStacktraceMessage.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/consoleViewOut.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/generateAction.java">
           <value>
             <set />
           </value>
