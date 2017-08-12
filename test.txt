@@ -1,0 +1,12 @@
+git init
+git remote add *Name for main git* https://github.com/aqeel-hashim/VisionMentor.git
+git remote -v
+git remote update
+git branch -r
+git branch *Local Name You Want to give for plugin* *Name for main git*/*Plugin Name on github*
+git checkout *Local Name You Want to give for plugin*
+
+//If you are not using an IDE use these commands to push to your branch
+git add .
+git commit -m "Type an appropriate Message here"
+git push -u *Name for main git* *Local Name You Want to give for plugin*:*Plugin Name on github*
