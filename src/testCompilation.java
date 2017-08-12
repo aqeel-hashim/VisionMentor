@@ -28,7 +28,9 @@ public class testCompilation implements ApplicationComponent {
     @Override
     @NotNull
     public String getComponentName() {
-        return "testCompilation";
+        return "testCompilations";
+
+
     }
 
 
