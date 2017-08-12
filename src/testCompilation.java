@@ -10,15 +10,15 @@ public class testCompilation implements ApplicationComponent,CompilationStatusLi
 
     @Override
     public void initComponent() {
-        ActionManager am = ActionManager.getInstance();
-        // TODO: insert component initialization logic here
-        CompilationStatusListener cl = new CompilationStatusListener() {
-            @Override
-            public void compilationFinished(boolean aborted, int errors, int warnings, CompileContext compileContext) {
-                System.out.println("compile error");
-                System.out.println(compileContext);
-            }
-        };
+//        ActionManager am = ActionManager.getInstance();
+//        // TODO: insert component initialization logic here
+//        CompilationStatusListener cl = new CompilationStatusListener() {
+//            @Override
+//            public void compilationFinished(boolean aborted, int errors, int warnings, CompileContext compileContext) {
+//                System.out.println("compile error");
+//                System.out.println(compileContext);
+//            }
+//        };
 
 
     }
