@@ -1,26 +1,23 @@
+import com.intellij.execution.ui.ConsoleView;
+import com.intellij.execution.ui.ConsoleViewContentType;
+import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.compiler.CompilationStatusListener;
 import com.intellij.openapi.compiler.CompileContext;
 import com.intellij.openapi.components.ApplicationComponent;
+import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.NotNull;
 
-public class testCompilation implements ApplicationComponent,CompilationStatusListener {
+public class testCompilation implements ApplicationComponent {
     public testCompilation() {
-        initComponent();
     }
+
 
     @Override
     public void initComponent() {
-//        ActionManager am = ActionManager.getInstance();
-//        // TODO: insert component initialization logic here
-//        CompilationStatusListener cl = new CompilationStatusListener() {
-//            @Override
-//            public void compilationFinished(boolean aborted, int errors, int warnings, CompileContext compileContext) {
-//                System.out.println("compile error");
-//                System.out.println(compileContext);
-//            }
-//        };
+        DebugActionListner dbg = new DebugActionListner();
 
-
+        ActionManager.getInstance().addAnActionListener(dbg);
+        System.out.println("Test");
     }
 
     @Override
@@ -33,4 +30,9 @@ public class testCompilation implements ApplicationComponent,CompilationStatusLi
     public String getComponentName() {
         return "testCompilation";
     }
+
+   
+
+
+
 }
