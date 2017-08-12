@@ -19,8 +19,10 @@ public class login {
                 String email= username.getText();
                 String pass=password.getText();
 
-                
 
+                if(email.equals("alphagamer")&&pass.equals("123")){
+                    
+                }
 
 
 
