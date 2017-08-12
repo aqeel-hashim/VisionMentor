@@ -77,7 +77,7 @@ public class testCompilation implements ApplicationComponent,BulkFileListener {
     public void after(List<? extends VFileEvent> events) {
 
 
-        VirtualFileManager.getInstance().notify();
+//        VirtualFileManager.getInstance().notify();
 //       if(events.)
         //System.out.println("event name");
         //System.out.println(events.getClass().toString());
