@@ -22,5 +22,18 @@ def getUserNames(name):
        print str(coll['Name'])
    return str(coll['Name'])
 
+#registers a new user and updates the total count of users
+@app.route('/register/<string:name>')
+def registerUser(name):
+    if collection.count({"Name":name}) == 0:
+        new_user = {"Name": name}
+        collection.insert_one(new_user).inserted_id
+        print ("Successfully registered")
+    else:
+        print "There is already somebody with that username!"
+    return str(collection.count())
+
+
+
 if __name__ == '__main__':
     app.run()
