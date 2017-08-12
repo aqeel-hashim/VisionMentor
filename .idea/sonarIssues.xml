@@ -18,12 +18,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/output.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/DebugActionListner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/IncomingStacktraceMessage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/consoleViewOut.java">
           <value>
             <set />
           </value>
