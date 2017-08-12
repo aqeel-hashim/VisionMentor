@@ -6,7 +6,7 @@ import pprint
 app = Flask(__name__)
 
 client = MongoClient('mongodb://kaitoano0:boss359slasian!@maincluster-shard-00-00-resyk.mongodb.net:27017,maincluster-shard-00-01-resyk.mongodb.net:27017,maincluster-shard-00-02-resyk.mongodb.net:27017/testDB?ssl=true&replicaSet=mainCluster-shard-0&authSource=admin')
-db = client.civiliand
+db = client.civilian
 collection = db.city
 
 #returns count of all the records in the database
@@ -29,9 +29,10 @@ def registerUser(name):
         new_user = {"Name": name}
         collection.insert_one(new_user).inserted_id
         print ("Successfully registered")
+        return str(collection.count())
     else:
-        print "There is already someone with that username!"
-    return str(collection.count())
+        return "There is already someone with that username!"
+
 
 #displays every username in the database
 @app.route('/showAll')
@@ -45,6 +46,14 @@ def showAll():
     for j in range(i):
         sentence += (", " +output[j])
     return sentence
+
+#deletes all the records in the table and returns casualties
+@app.route('/deleteAll')
+def deleteAll():
+    deletion = collection.delete_many({})
+    casualties = deletion.deleted_count
+    return str(casualties) + " casualties have been found! Collection has been fully truncated!"
+
 
 
 
