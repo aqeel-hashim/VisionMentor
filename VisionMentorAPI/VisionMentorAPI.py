@@ -1,5 +1,4 @@
 from flask import *
-from flask_pymongo import PyMongo
 from pymongo import MongoClient
 
 app = Flask(__name__)
@@ -15,17 +14,18 @@ def getUserCount():
     return str(s)
 
 #returns the details of the records with the matching username
-@app.route('/user/<string:Username>')
-def getUserNames(Username):
-   for coll in collection.find({"Name":Username},{"_id":0}):
-       print str(coll['Username'])
-   return str(coll['Username'])
+@app.route('/user/<string:username>')
+def getUserNames(username):
+   output=""
+   for coll in collection.find({"Username":username},{"_id":0}):
+     output += str(coll['username']) + " - " + str(coll['email']) + " - " + str(coll['Points']) + " points - " + str(coll['Build_Data'][0]['Build_Errors'])+ " build errors so far - " +str(coll['Build_Data'][0]['Exceptions']) + " exceptions out of "+ str(coll['Build_Data'][0]['Builds']) + " builds"
+   return output
 
 #registers a new user and updates the total count of users
-@app.route('/register/<string:Username>')
-def registerUser(Username):
-    if collection.count({"Username":Username}) == 0:
-        new_user = {"Username": Username}
+@app.route('/register/<string:username>')
+def registerUser(username):
+    if collection.count({"Username":username}) == 0:
+        new_user = {"Username": username}
         collection.insert_one(new_user).inserted_id
         print ("Successfully registered")
         return str(collection.count())
@@ -53,6 +53,5 @@ def deleteAll():
     casualties = deletion.deleted_count
     return str(casualties) + " casualties have been found! Collection has been fully truncated!"
 
-
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
