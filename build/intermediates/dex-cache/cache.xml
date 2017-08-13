@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.android\build-cache\84344bfe4ba8b9d23a9d687eb530f6a8aa5791c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_59cb07b120691aa9c75ad13cc9fcb025305eec22\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.android\build-cache\07a6a9342771dbf223d02e6676c7231cece3d95c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c734c11d6dd9526c018c3a56cfbb07d6e820aae7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\VMen\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0466d717ca225d4bc326db5c40f448fa39d6af59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_70f0ec9a8e925aece3ed43bc1c7eb5324e774f6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.3.0\9e09011e9767bb76b5e27c9b8223476b93b14631\converter-gson-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.3.0_34fe4968cc0cb0dbe6b6cd3b6178a4809f549b6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.0\5a11f020cce2d11eb71ba916700600e18c4547e7\okhttp-3.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.8.0_f93f8ec0ef14c90779fa1f3ac0e43e04a7dc07b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.android\build-cache\e44f199ad5df92ddc765621b22603fda614e6034\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b4ae2d15fab2c473ad8e27fa73005dc0fd2049af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.13.0_f5d7b6e15b930fa797587069921cd08c341d8158\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.3.0\bcacde6a8ccedcc56c127403d26b76072fe6214d\retrofit-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.3.0_6c8c1f94c0724697f535c66eb617cf19eef029d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nemo Domus\.android\build-cache\de3a3bc4ea4cbe2b555292470a391628c932c014\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="C:\Android\VMen\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_53a20f8e743459c81cb28bd76f8176433b9e4a16\classes.dex" />
+    </item>
+
+</items>
