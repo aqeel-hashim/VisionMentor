@@ -201,7 +201,7 @@ public class BluetoothLeService extends Service {
      */
     public boolean connect(final String address) {
         if (mBluetoothAdapter == null || address == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
+            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address. " + address + "  ---   "+mBluetoothAdapter.getName());
             return false;
         }
 
